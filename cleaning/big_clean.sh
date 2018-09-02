@@ -1,5 +1,7 @@
 #!/bin/bash
 
 name=$1
-directory=$2
-tar zxf $name  --directory $directory
+scratch=$2
+
+tar zxf $name --directory $scratch
+tar zcf cleaned_$name $scratch
